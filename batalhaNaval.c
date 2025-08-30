@@ -3,6 +3,7 @@
 int main() {
 
     printf("Jogo batalha naval\n");
+    printf("Novo commit\n");
     
    
     printf("Simulando o movimento da Torre (5 casas para a direita):\n");
