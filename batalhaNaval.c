@@ -1,6 +1,9 @@
 #include <stdio.h>
 
 int main() {
+
+    printf("Jogo batalha naval\n");
+    
    
     printf("Simulando o movimento da Torre (5 casas para a direita):\n");
     for (int i = 0; i < 5; i++) {
