@@ -1,40 +1,50 @@
 #include <stdio.h>
 
-// Desafio Batalha Naval - MateCheck
-// Este código inicial serve como base para o desenvolvimento do sistema de Batalha Naval.
-// Siga os comentários para implementar cada parte do desafio.
-
 int main() {
-    // Nível Novato - Posicionamento dos Navios
-    // Sugestão: Declare uma matriz bidimensional para representar o tabuleiro (Ex: int tabuleiro[5][5];).
-    // Sugestão: Posicione dois navios no tabuleiro, um verticalmente e outro horizontalmente.
-    // Sugestão: Utilize `printf` para exibir as coordenadas de cada parte dos navios.
+   
+    printf("Simulando o movimento da Torre (5 casas para a direita):\n");
+    for (int i = 0; i < 5; i++) {
+        printf("Direita\n");
+    }
+    printf("\n");
 
-    // Nível Aventureiro - Expansão do Tabuleiro e Posicionamento Diagonal
-    // Sugestão: Expanda o tabuleiro para uma matriz 10x10.
-    // Sugestão: Posicione quatro navios no tabuleiro, incluindo dois na diagonal.
-    // Sugestão: Exiba o tabuleiro completo no console, mostrando 0 para posições vazias e 3 para posições ocupadas.
-
-    // Nível Mestre - Habilidades Especiais com Matrizes
-    // Sugestão: Crie matrizes para representar habilidades especiais como cone, cruz, e octaedro.
-    // Sugestão: Utilize estruturas de repetição aninhadas para preencher as áreas afetadas por essas habilidades no tabuleiro.
-    // Sugestão: Exiba o tabuleiro com as áreas afetadas, utilizando 0 para áreas não afetadas e 1 para áreas atingidas.
-
-    // Exemplos de exibição das habilidades:
-    // Exemplo para habilidade em cone:
-    // 0 0 1 0 0
-    // 0 1 1 1 0
-    // 1 1 1 1 1
+ 
     
-    // Exemplo para habilidade em octaedro:
-    // 0 0 1 0 0
-    // 0 1 1 1 0
-    // 0 0 1 0 0
+    int casas_bispo = 5;
+    printf("Simulando o movimento do Bispo (5 casas na diagonal para cima e a direita):\n");
+    while (casas_bispo > 0) {
+        printf("Cima, Direita\n");
+        casas_bispo--;
+    }
+    printf("\n");
 
-    // Exemplo para habilidade em cruz:
-    // 0 0 1 0 0
-    // 1 1 1 1 1
-    // 0 0 1 0 0
+
+    int casas_rainha = 8;
+    printf("Simulando o movimento da Rainha (8 casas para a esquerda):\n");
+    do {
+        printf("Esquerda\n");
+        casas_rainha--;
+    } while (casas_rainha > 0);
+    printf("\n");
+
+  
+    
+
+    
+   
+    printf("Simulando o movimento do Cavalo (2 casas para baixo e 1 para a esquerda):\n");
+    for (int i = 0; i < 2; i++) {
+        printf("Baixo\n");
+        
+       
+       
+        int j = 0;
+        while (j < 1) {
+            printf("Esquerda\n");
+            j++;
+        }
+    }
+    printf("\n");
 
     return 0;
 }
